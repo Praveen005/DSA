@@ -2,5 +2,5 @@
 using namespace std;
 int main(){
 	cout<<"TRYING GIT";
-	RETURN 0;
+	return 0;
 }
