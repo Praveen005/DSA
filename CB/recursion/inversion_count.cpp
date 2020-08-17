@@ -1,3 +1,8 @@
+/*
+problem statement : https://hack.codingblocks.com/app/practice/1/374/problem
+
+*/
+
 #include<iostream>
 using namespace std;
 
