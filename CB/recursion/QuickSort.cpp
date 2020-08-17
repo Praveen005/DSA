@@ -32,10 +32,12 @@ void quickSort(int a[], int s, int e) {
 
 }
 int main() {
+/*
 #ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 #endif
+*/
 	int n; cin >> n;
 	int a[200005];
 	for (int i = 0; i < n; i++) {
