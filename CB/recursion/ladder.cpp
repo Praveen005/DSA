@@ -21,11 +21,12 @@ int waytoReach(int n, int k) {
     return ans;
 }
 int main() {
-
+/*
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
+*/
     int n; cin >> n;
     int k; cin >> k;
     // 'k' is max value of the jump i.e it can take jumps of 1-k steps

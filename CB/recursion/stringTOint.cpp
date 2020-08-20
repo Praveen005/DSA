@@ -22,10 +22,12 @@ int stringTOinteger(char* ch, int n) {
 
 }
 int main() {
+	/*
 #ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 #endif
+*/
 
 	char ch[25];
 	cin.getline(ch, 25);
