@@ -17,10 +17,12 @@ void move(int n, char src, char helper , char dest) {
 	move(n - 1, helper, src, dest);
 }
 int main() {
+/*
 #ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 #endif
+*/
 	int n;
 	cin >> n;
 	// here : A- Source , B- Helper , C- Destination
