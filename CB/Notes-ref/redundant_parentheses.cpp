@@ -59,3 +59,44 @@ int main() {
 	}
 	return 0;
 }
+
+
+
+
+/*
+
+smaple Input:
+
+12
+(((a+(b))+(c+d)))
+((a+(b))+(c+d))
+(((a+(b))+(c+d)))
+((a+(b))+(c+d))
+(((a+(b)))+(c+d))
+((a+b)+(c+d))
+((a+(b))+(c+d))
+((a-b+c)+((a+d)+(d+e))+((f+d)+(f+e)))
+((a-b+c)+(((a+d)+(d+e))+((f+d)+(f+e))))
+((a-b+c)+((a+d)+(d+e))+(((f+d)+(f+e))))
+(((a-b+c)+((a+d)+(d+e)))+((f+d)+(f+e)))
+((a-b+c)+(((a+d)+(d+e)))+((f+d)+(f+e)))
+
+
+
+sample output:
+
+Duplicate
+Not Duplicates
+Duplicate
+Not Duplicates
+Duplicate
+Not Duplicates
+Not Duplicates
+Not Duplicates
+Not Duplicates
+Duplicate
+Not Duplicates
+Duplicate
+
+
+*/
