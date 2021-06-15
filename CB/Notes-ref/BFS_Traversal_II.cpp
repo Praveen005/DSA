@@ -34,6 +34,9 @@ node* BuildTree(void) {    // This function returns the address to the root node
 
 //Method - I  : storing the value of every level along with node in the queue
 void bfs(node* root) {
+	if(root==NULL){
+		return;
+	}
 	//form variable of type pair<node*,int> and push it to the queue
 	pair<node*, int>p, temp;
 	queue<pair<node*, int>> q;
@@ -76,6 +79,9 @@ void bfs(node* root) {
 //Method - II
 
 void bfs2(node* root) {
+	if(root==NULL){
+		return;
+	}
 	queue<node*> Q;
 	Q.push(root);
 	Q.push(NULL);
