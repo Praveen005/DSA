@@ -156,10 +156,8 @@ public:
 };
 
 //Finding the diameter of the tree
-Pair
-fastDiameter(node* root) {
-    Pair
-    p;
+Pair fastDiameter(node* root) {
+    Pair p;
     //Base case
     if (root == NULL) {
 
@@ -170,10 +168,8 @@ fastDiameter(node* root) {
 
     //otherwise
     //left & right waale child ka height, diameter bataiye
-    Pair
-    left = fastDiameter(root->left);
-    Pair
-    right = fastDiameter(root->right);
+    Pair left = fastDiameter(root->left);
+    Pair right = fastDiameter(root->right);
 
     //now we have the diameter and height of the children of the current node
     //now we can find out the height and the diameter of the current node
