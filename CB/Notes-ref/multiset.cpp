@@ -3,6 +3,15 @@
 using namespace std;
 typedef multiset<int>::iterator It;
 
+class comapre{
+    public:
+    //overload the operator (round bracket)
+    
+    bool operator()(pair<string, int>a, pair<string, int>b){
+        return a.second<b.second;
+    }
+};
+
 int main() {
     int arr[]={1,2,5,2,9,3,4,2,4,5,6,5,5};
     int n=sizeof(arr)/sizeof(arr[0]);
@@ -60,19 +69,35 @@ int main() {
     }
     cout<<endl;
 
+
+
+    pair<string, int>p1= make_pair("A", 120);
+    pair<string, int>p2= make_pair("B", 12);
+    pair<string, int>p3= make_pair("C", 130);
+    pair<string, int>p4= make_pair("D", 140);
+    pair<string, int>p5= make_pair("E", 150);
+    pair<string, int>p6= make_pair("F", 20);
+    pair<string, int>p7= make_pair("G", 52);
+
+    multiset<pair<string, int>, comapre>m2;
+    m2.insert(p1);
+    m2.insert(p2);
+    m2.insert(p3);
+    m2.insert(p4);
+    m2.insert(p5);
+    m2.insert(p6);
+    m2.insert(p7);
+
+    for(auto K : m2){
+        cout<<K.first<<"  --  "<<K.second<<endl;
+    }
+    
+
+
+
+
     // learn more: https://www.cplusplus.com/reference/set/multiset/
 }
 
 
-/*
 
-output:
-1 2 2 2 3 4 4 5 5 5 5 6 9 
-1 3 4 4 5 5 5 5 6 9 
-1 3 4 4 5 5 5 5 6 8 9 
-count of 5: 4
-5
-5 5 5 5 
-3 4 4 5 5 5 5 6 8 9 
-
-*/
