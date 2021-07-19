@@ -20,6 +20,8 @@ class person{
         }
 };
 
+//comparator class
+//STL requires comparator class and not comparator function
 class personCompare{
     public:
     bool operator()(person A, person B){
