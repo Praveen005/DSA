@@ -25,7 +25,7 @@ class person{
 class personCompare{
     public:
     bool operator()(person A, person B){
-        return A.age > B.age;
+        return A.age < B.age;
     }
 };
 
@@ -49,3 +49,22 @@ int main() {
     }
 }
 
+/*
+
+sample Input:
+6
+Ram 23
+Shyam 43
+Ghanshyam 54
+Dinkar 76
+Ganesh 32
+Suresh 68
+3
+
+
+sample output:
+Dinkar 76 
+Suresh 68 
+Ghanshyam 54 
+
+*/
