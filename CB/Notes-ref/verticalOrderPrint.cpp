@@ -27,6 +27,7 @@ void verticalOrderPrint(node* root, int d, map<int, vector<int>>&verticalOrder){
     verticalOrderPrint(root->right, d+1, verticalOrder);
     return;
 }
+
 int main() {
     node* root=new node(1);
     root->left= new node(2);
@@ -58,9 +59,8 @@ output:
 1 5 6 
 9 3 
 7 
-8 
+8
 
 */
 
-*/
 
