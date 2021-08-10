@@ -21,7 +21,6 @@ int main() {
         sum+= abs(blackDots[i]- whiteDots[i]);
     }
     cout<<sum<<endl;
-
 }
 
 /*
