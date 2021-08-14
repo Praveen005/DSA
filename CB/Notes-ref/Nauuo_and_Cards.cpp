@@ -86,7 +86,8 @@ If we play these many blank cards so the top of pile above this position are alr
 So the ans is max(pi — i + 1) + n. 
 We add n for playing the cards 1 to n.
 
-for corner case see the notebook.
+Corner case: when a few cards are already inserted in the order we want and other cards in the pile are at the indices we desire.
+	     check the notebook for details.
 */
 
 
