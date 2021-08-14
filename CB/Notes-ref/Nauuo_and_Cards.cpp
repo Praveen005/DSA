@@ -73,7 +73,8 @@ int main() {
 
 
 /*
-refer: https://codeforces.com/blog/entry/67511
+refer: https://codeforces.com/blog/entry/67511   :read comment by shpvb
+
 The approach is that you have to play some blank cards in the beginning and then play the cards 1 to n in a row. 
 if you see by taking examples. Now suppose you are starting your moves for playing cards 1 to n. 
 So what are the requirement: Card 1 present in hand. 
