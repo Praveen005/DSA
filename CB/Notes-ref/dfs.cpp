@@ -18,9 +18,10 @@ class Graph{
     void dfs_helper(T src, map<T, bool>& visited){
         cout<<src<<" ";
         visited[src]= true;
-
-        for(pair<T, bool> nbr: visited){
-            T node= nbr.first;
+        
+        //l[src] is the list of all the neighbours of the source node
+        for(T nbr: l[src]){
+            T node= nbr;
             if(visited[node]== false){
                 dfs_helper(node, visited);
             }
