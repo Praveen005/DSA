@@ -50,3 +50,5 @@ int main() {
     cout<<MinCoins_BotUP(N, coins, T)<<endl;
 }
 
+
+//corner case:   https://ide.codingblocks.com/s/667397
